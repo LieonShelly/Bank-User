@@ -1,0 +1,44 @@
+PODS:
+  - CHPushSocket (0.5.5):
+    - SocketRocket (~> 0.5.1)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Eureka (1.7.0)
+  - Fabric (1.6.11)
+  - KeychainAccess (3.0.2)
+  - R.swift (3.2.0):
+    - R.swift.Library (~> 3.0.2)
+  - R.swift.Library (3.0.2)
+  - SocketRocket (0.5.1)
+
+DEPENDENCIES:
+  - CHPushSocket
+  - Crashlytics
+  - Eureka (from `https://github.com/laurivers/Eureka.git`, branch `swift-3.0`)
+  - Fabric
+  - KeychainAccess
+  - R.swift
+
+EXTERNAL SOURCES:
+  Eureka:
+    :branch: swift-3.0
+    :git: https://github.com/laurivers/Eureka.git
+
+CHECKOUT OPTIONS:
+  Eureka:
+    :commit: e20adfdfe917e675c75459dfc8a7288fa3966750
+    :git: https://github.com/laurivers/Eureka.git
+
+SPEC CHECKSUMS:
+  CHPushSocket: 0ce7b679e0426954c68df0ca686d9a60691aa2b9
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Eureka: 2020d9faeef7b7e9adeb9e3d8af779e5931c1897
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  KeychainAccess: a986406022dfc7c634c691ad3bec670cc6a32002
+  R.swift: 207a372a2b5977caef440c696a368009460641d1
+  R.swift.Library: fbdec16c9802ad104fc1ba53415dc190e6ec5c73
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+
+PODFILE CHECKSUM: 66674728d9974aa693e3f751c75d8a1815ecbf9a
+
+COCOAPODS: 1.2.1

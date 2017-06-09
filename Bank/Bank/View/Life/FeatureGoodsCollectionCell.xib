@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeatureGoodsCollectionCell" id="gTV-IL-0wX" customClass="FeatureGoodsCollectionCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F9g-Um-70b">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="F9g-Um-70b" secondAttribute="height" multiplier="1:1" id="B4d-Hh-m2v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yke-qM-PQV">
+                        <rect key="frame" x="0.0" y="139" width="100" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.32584697008132935" green="0.32583719491958618" blue="0.32584273815155029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irX-Q5-r8n">
+                        <rect key="frame" x="0.0" y="142" width="100" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.9851614236831665" green="0.47409823536872864" blue="0.03239871934056282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Yke-qM-PQV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Xg-Aa-4qS"/>
+                <constraint firstItem="F9g-Um-70b" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ORS-mI-Phd"/>
+                <constraint firstAttribute="bottom" secondItem="irX-Q5-r8n" secondAttribute="bottom" id="OcM-lQ-otQ"/>
+                <constraint firstItem="F9g-Um-70b" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Sbd-fc-SE4"/>
+                <constraint firstAttribute="trailing" secondItem="irX-Q5-r8n" secondAttribute="trailing" id="ZcZ-O8-O9B"/>
+                <constraint firstItem="irX-Q5-r8n" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cjU-MS-Kh9"/>
+                <constraint firstItem="irX-Q5-r8n" firstAttribute="top" secondItem="Yke-qM-PQV" secondAttribute="bottom" constant="3" id="iqJ-cZ-J9L"/>
+                <constraint firstAttribute="trailing" secondItem="F9g-Um-70b" secondAttribute="trailing" id="rMI-YP-zys"/>
+                <constraint firstAttribute="trailing" secondItem="Yke-qM-PQV" secondAttribute="trailing" id="znD-aL-c8t"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="F9g-Um-70b" id="13T-HV-Xp4"/>
+                <outlet property="nameLabel" destination="Yke-qM-PQV" id="7fs-tQ-GH0"/>
+                <outlet property="priceLabel" destination="irX-Q5-r8n" id="Hy1-9I-82D"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

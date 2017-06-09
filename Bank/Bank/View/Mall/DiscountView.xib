@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DiscountView" id="EGo-jg-UHm" customClass="DiscountView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="折扣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeU-ZJ-Nnj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="CP3-yB-Jd7"/>
+                        <constraint firstAttribute="width" constant="55" id="rTA-rK-gvY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国庆活动9.0折" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkV-YI-7YO">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-Ws-oNF">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="lCa-be-fQA"/>
+                    </constraints>
+                    <state key="normal" image="btn_activity"/>
+                    <connections>
+                        <action selector="openAction:" destination="EGo-jg-UHm" eventType="touchUpInside" id="7bH-Q5-141"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(3)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1z-Do-LmN">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="RIO-Zh-XXx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QeU-ZJ-Nnj" firstAttribute="leading" secondItem="EGo-jg-UHm" secondAttribute="leading" constant="15" id="6Zp-Nz-uLJ"/>
+                <constraint firstItem="nkV-YI-7YO" firstAttribute="centerY" secondItem="EGo-jg-UHm" secondAttribute="centerY" id="9bJ-la-hXG"/>
+                <constraint firstItem="QeU-ZJ-Nnj" firstAttribute="centerY" secondItem="EGo-jg-UHm" secondAttribute="centerY" id="BK8-Dq-q6A"/>
+                <constraint firstAttribute="trailing" secondItem="oXH-Ws-oNF" secondAttribute="trailing" id="Ezv-Uc-mVd"/>
+                <constraint firstItem="oXH-Ws-oNF" firstAttribute="top" secondItem="EGo-jg-UHm" secondAttribute="top" id="Oaa-AI-DIJ"/>
+                <constraint firstAttribute="bottom" secondItem="oXH-Ws-oNF" secondAttribute="bottom" id="QYj-NZ-405"/>
+                <constraint firstItem="oXH-Ws-oNF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f1z-Do-LmN" secondAttribute="trailing" priority="750" constant="5" id="UVB-WP-6Iz"/>
+                <constraint firstItem="nkV-YI-7YO" firstAttribute="leading" secondItem="QeU-ZJ-Nnj" secondAttribute="trailing" constant="5" id="nGF-gC-D1U"/>
+                <constraint firstItem="f1z-Do-LmN" firstAttribute="centerY" secondItem="EGo-jg-UHm" secondAttribute="centerY" id="qFd-qJ-gFI"/>
+                <constraint firstItem="f1z-Do-LmN" firstAttribute="leading" secondItem="nkV-YI-7YO" secondAttribute="trailing" id="xXd-jc-8Td"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countLabel" destination="f1z-Do-LmN" id="fu8-Lb-91b"/>
+                <outlet property="nameLabel" destination="nkV-YI-7YO" id="SfZ-83-5Ns"/>
+                <outlet property="openButton" destination="oXH-Ws-oNF" id="MBG-N0-3rb"/>
+                <outlet property="typeLabel" destination="QeU-ZJ-Nnj" id="9Na-58-g34"/>
+            </connections>
+            <point key="canvasLocation" x="-14.5" y="-7.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_activity" width="13" height="8"/>
+    </resources>
+</document>

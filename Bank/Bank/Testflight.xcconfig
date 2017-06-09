@@ -1,0 +1,38 @@
+//
+//  Testflight.xcconfig
+//  Bank
+//
+//  Created by Koh Ryu on 2016/11/22.
+//  Copyright © 2016年 ChangHongCloudTechService. All rights reserved.
+//
+
+#include "../Pods/Target Support Files/Pods-Bank/Pods-Bank.testflight.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = cn.msh.mobile.mall.customer.dev
+
+DEVELOPMENT_TEAM = W9B5AM43M3
+
+CODE_SIGN_IDENTITY = iPhone Developer
+
+// QQ
+QQ_URL_SCHEME1 = tencent1105519826
+QQ_URL_SCHEME2 = QQ41E4E4D2
+
+// Custom
+BANK_URL_SCHEME = mshuser
+
+// Keys
+WX_APP_ID  = wx9177c9d0925aa445
+WX_APP_KEY = 70491607915fd057a57d68bdd834a480
+QQ_APP_ID  = 1105519826
+XG_APP_ID  = 2200211932
+XG_APP_KEY = IIQ8RY42N68U
+
+// CHCTS Push Service
+PUSH_APP_KEY = 287e87ca721d31dd1600c657081faebf
+PUSH_APP_SECRET = b4173a89932e737f2e8643bfd4a4e013ef180b12039f6de4226976daac9cb277
+
+// URL
+BANK_DOMAIN = msh.chcts.cn
+DOMAIN_ENV = stg
+

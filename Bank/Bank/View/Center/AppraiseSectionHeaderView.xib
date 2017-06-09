@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Jdu-03-nu2" customClass="AppraiseSectionHeaderView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7N-TN-SzZ">
+                    <rect key="frame" x="0.0" y="0.0" width="301" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUT-kb-Qdf">
+                            <rect key="frame" x="50" y="11" width="238" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center_order_ico_shop" translatesAutoresizingMaskIntoConstraints="NO" id="rGx-Oe-4YP">
+                            <rect key="frame" x="17" y="14" width="16" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="AUT-kb-Qdf" firstAttribute="leading" secondItem="a7N-TN-SzZ" secondAttribute="leading" constant="50" id="92B-Vp-BR2"/>
+                        <constraint firstItem="AUT-kb-Qdf" firstAttribute="centerY" secondItem="a7N-TN-SzZ" secondAttribute="centerY" id="D39-nz-gLX"/>
+                        <constraint firstItem="rGx-Oe-4YP" firstAttribute="centerY" secondItem="a7N-TN-SzZ" secondAttribute="centerY" id="Huj-Ao-oXs"/>
+                        <constraint firstAttribute="trailing" secondItem="AUT-kb-Qdf" secondAttribute="trailing" constant="13" id="M78-5t-Vv1"/>
+                        <constraint firstItem="rGx-Oe-4YP" firstAttribute="leading" secondItem="a7N-TN-SzZ" secondAttribute="leading" constant="17" id="W5L-T8-V7m"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="a7N-TN-SzZ" firstAttribute="leading" secondItem="Jdu-03-nu2" secondAttribute="leading" id="IgT-vE-LpK"/>
+                <constraint firstItem="a7N-TN-SzZ" firstAttribute="top" secondItem="Jdu-03-nu2" secondAttribute="top" id="mzg-zP-D8D"/>
+                <constraint firstAttribute="trailing" secondItem="a7N-TN-SzZ" secondAttribute="trailing" id="ohp-DK-7Iq"/>
+                <constraint firstAttribute="bottom" secondItem="a7N-TN-SzZ" secondAttribute="bottom" id="y1M-58-rEY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="AUT-kb-Qdf" id="P2x-kv-2oL"/>
+            </connections>
+            <point key="canvasLocation" x="391.5" y="186"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="center_order_ico_shop" width="16" height="16"/>
+    </resources>
+</document>

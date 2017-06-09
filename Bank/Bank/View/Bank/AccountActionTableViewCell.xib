@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountActionTableViewCell" rowHeight="150" id="KGk-i7-Jjw" customClass="AccountActionTableViewCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rKm-HB-wzh">
+                        <rect key="frame" x="20" y="25" width="280" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="WzW-NQ-hfP"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="tLY-bk-4Pg">
+                        <rect key="frame" x="20" y="83" width="280" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="PbQ-50-G19"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tLY-bk-4Pg" firstAttribute="top" secondItem="rKm-HB-wzh" secondAttribute="bottom" constant="18" id="37y-Yb-onc"/>
+                    <constraint firstItem="tLY-bk-4Pg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="7II-9k-s0C"/>
+                    <constraint firstAttribute="trailing" secondItem="rKm-HB-wzh" secondAttribute="trailing" constant="20" id="FRd-aP-pHl"/>
+                    <constraint firstAttribute="trailing" secondItem="tLY-bk-4Pg" secondAttribute="trailing" constant="20" id="IbP-8D-mBt"/>
+                    <constraint firstItem="tLY-bk-4Pg" firstAttribute="top" secondItem="rKm-HB-wzh" secondAttribute="bottom" constant="18" id="Xck-Zt-LXi"/>
+                    <constraint firstItem="rKm-HB-wzh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="fAi-tC-xTo"/>
+                    <constraint firstItem="rKm-HB-wzh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="maR-RK-TSQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstStackViews" destination="rKm-HB-wzh" id="m8J-mH-vvl"/>
+                <outlet property="secondStackView" destination="tLY-bk-4Pg" id="9Pc-ol-Qgc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

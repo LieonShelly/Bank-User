@@ -1,0 +1,18 @@
+github "nixzhu/Proposer" ~> 1.0
+github "Hearst-DD/ObjectMapper" ~> 2.0
+github "Alamofire/Alamofire" ~> 4.0
+github "malcommac/SwiftDate" ~> 4.0
+github "devxoul/URLNavigator" ~> 1.0
+github "SnapKit/SnapKit" ~> 3.0.2
+github "hyperoslo/ImagePicker" ~> 2.0
+github "TakeScoop/SwiftyRSA" ~> 0.5.0
+github "onevcat/Kingfisher" ~> 3.0
+github "Ekhoo/Device" ~> 2.0
+github "Alamofire/AlamofireImage" ~> 3.0
+github "nixzhu/MonkeyKing" ~> 1.0
+github "mxcl/PromiseKit" ~> 4.0
+github "Yalantis/PullToRefresh" ~> 2.0
+github "jdg/MBProgressHUD" ~> 1.0.0
+github "hyperoslo/Whisper"
+github "pinterest/PINCache"
+github "SwiftyBeaver/SwiftyBeaver"

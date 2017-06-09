@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChooseBranchTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="ChooseBranchTableViewCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_ic_add" highlightedImage="bank_ic_add2" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-W7-YrQ">
+                        <rect key="frame" x="12" y="35" width="13" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="cbf-Vk-pF8"/>
+                            <constraint firstAttribute="width" constant="13" id="hBG-fK-gTi"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="lVi-cm-QGB">
+                        <rect key="frame" x="39" y="15" width="271" height="57"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="长虹支行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbP-Qq-7X9">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwB-0w-xKt">
+                                <rect key="frame" x="0.0" y="22" width="271" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-Nu-GYY">
+                                <rect key="frame" x="0.0" y="38" width="271" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.64313725489999995" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uDP-W7-YrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Qo1-9M-CQR"/>
+                    <constraint firstItem="uDP-W7-YrQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y7q-F2-qNr"/>
+                    <constraint firstAttribute="trailing" secondItem="lVi-cm-QGB" secondAttribute="trailing" constant="10" id="rBr-3B-h5O"/>
+                    <constraint firstAttribute="bottom" secondItem="lVi-cm-QGB" secondAttribute="bottom" constant="15" id="tVo-Gs-RgN"/>
+                    <constraint firstItem="lVi-cm-QGB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="uxh-ke-ibm"/>
+                    <constraint firstItem="lVi-cm-QGB" firstAttribute="leading" secondItem="uDP-W7-YrQ" secondAttribute="trailing" constant="14" id="v4c-Gi-jza"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="OSh-Nu-GYY" id="SSD-aJ-meQ"/>
+                <outlet property="nameLabel" destination="IbP-Qq-7X9" id="Q7R-KB-28K"/>
+                <outlet property="telLabel" destination="CwB-0w-xKt" id="8CT-z0-OQ8"/>
+            </connections>
+            <point key="canvasLocation" x="286" y="405"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bank_ic_add" width="13" height="17"/>
+        <image name="bank_ic_add2" width="13" height="17"/>
+    </resources>
+</document>

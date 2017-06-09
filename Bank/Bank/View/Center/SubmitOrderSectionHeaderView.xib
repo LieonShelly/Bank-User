@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pdd-VZ-HcW" customClass="SubmitOrderSectionHeaderView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iO2-nv-IfS">
+                    <rect key="frame" x="0.0" y="0.0" width="321" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4z-Jr-sWq">
+                            <rect key="frame" x="0.0" y="14" width="321" height="1"/>
+                            <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="gf1-eh-u43"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-dN-hPX">
+                            <rect key="frame" x="0.0" y="15" width="321" height="35"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_shop" translatesAutoresizingMaskIntoConstraints="NO" id="Pof-Wp-Ptf">
+                                    <rect key="frame" x="10" y="9" width="16" height="16"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkY-Cm-i66">
+                                    <rect key="frame" x="36" y="17.5" width="272" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="Pof-Wp-Ptf" firstAttribute="centerY" secondItem="RiL-dN-hPX" secondAttribute="centerY" id="QMH-SZ-yeF"/>
+                                <constraint firstItem="Pof-Wp-Ptf" firstAttribute="leading" secondItem="RiL-dN-hPX" secondAttribute="leading" constant="10" id="XO5-Uw-sur"/>
+                                <constraint firstItem="EkY-Cm-i66" firstAttribute="leading" secondItem="RiL-dN-hPX" secondAttribute="leading" constant="36" id="fi4-fc-xgN"/>
+                                <constraint firstItem="EkY-Cm-i66" firstAttribute="centerY" secondItem="RiL-dN-hPX" secondAttribute="centerY" id="nTb-xl-GIW"/>
+                                <constraint firstAttribute="trailing" secondItem="EkY-Cm-i66" secondAttribute="trailing" constant="13" id="pRj-kq-Uve"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="RiL-dN-hPX" firstAttribute="top" secondItem="iO2-nv-IfS" secondAttribute="top" constant="15" id="2Zz-c1-zza"/>
+                        <constraint firstItem="RiL-dN-hPX" firstAttribute="top" secondItem="c4z-Jr-sWq" secondAttribute="bottom" id="4IX-Qb-zkW"/>
+                        <constraint firstAttribute="bottom" secondItem="RiL-dN-hPX" secondAttribute="bottom" id="GfG-DU-0We"/>
+                        <constraint firstItem="RiL-dN-hPX" firstAttribute="leading" secondItem="iO2-nv-IfS" secondAttribute="leading" id="Pes-a5-kcO"/>
+                        <constraint firstItem="c4z-Jr-sWq" firstAttribute="leading" secondItem="iO2-nv-IfS" secondAttribute="leading" id="Rmg-Ff-NUR"/>
+                        <constraint firstAttribute="trailing" secondItem="c4z-Jr-sWq" secondAttribute="trailing" id="VGc-9Q-WBa"/>
+                        <constraint firstAttribute="trailing" secondItem="RiL-dN-hPX" secondAttribute="trailing" id="oei-us-B7b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iO2-nv-IfS" secondAttribute="trailing" id="4xc-Us-fFH"/>
+                <constraint firstAttribute="bottom" secondItem="iO2-nv-IfS" secondAttribute="bottom" id="8Th-eB-ExM"/>
+                <constraint firstItem="iO2-nv-IfS" firstAttribute="leading" secondItem="pdd-VZ-HcW" secondAttribute="leading" id="cV0-N9-hjK"/>
+                <constraint firstItem="iO2-nv-IfS" firstAttribute="top" secondItem="pdd-VZ-HcW" secondAttribute="top" id="qr0-aT-gDT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="Pof-Wp-Ptf" id="xGz-IF-AH2"/>
+                <outlet property="shopNameLabel" destination="EkY-Cm-i66" id="Lhz-X6-VtZ"/>
+                <outlet property="tapView" destination="RiL-dN-hPX" id="atz-J9-Z87"/>
+                <outlet property="topLayoutConstraint" destination="2Zz-c1-zza" id="y3U-RN-hAv"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="360"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ico_shop" width="16" height="16"/>
+    </resources>
+</document>

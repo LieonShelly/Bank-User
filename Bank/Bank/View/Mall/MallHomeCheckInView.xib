@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MallHomeCheckInView" id="hQt-2o-mbm" customClass="MallHomeCheckInView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWm-i3-6mF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mallHome_checkin_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wUY-sz-XZJ">
+                    <rect key="frame" x="47" y="100" width="281" height="192"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mallHome_checkin_success" translatesAutoresizingMaskIntoConstraints="NO" id="LXf-cX-ZHH">
+                    <rect key="frame" x="81.5" y="322" width="211" height="46"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOB-kQ-e2z">
+                    <rect key="frame" x="20" y="398" width="335" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LXf-cX-ZHH" firstAttribute="top" secondItem="wUY-sz-XZJ" secondAttribute="bottom" constant="30" id="6EJ-PE-YlT"/>
+                <constraint firstAttribute="trailing" secondItem="jOB-kQ-e2z" secondAttribute="trailing" constant="20" id="81M-eg-egB"/>
+                <constraint firstItem="KWm-i3-6mF" firstAttribute="top" secondItem="hQt-2o-mbm" secondAttribute="top" id="Ccj-ld-dbC"/>
+                <constraint firstItem="jOB-kQ-e2z" firstAttribute="leading" secondItem="hQt-2o-mbm" secondAttribute="leading" constant="20" id="SBz-zO-ey5"/>
+                <constraint firstItem="wUY-sz-XZJ" firstAttribute="centerX" secondItem="hQt-2o-mbm" secondAttribute="centerX" id="ZFP-Jh-bWJ"/>
+                <constraint firstItem="KWm-i3-6mF" firstAttribute="leading" secondItem="hQt-2o-mbm" secondAttribute="leading" id="crz-uW-NjM"/>
+                <constraint firstItem="LXf-cX-ZHH" firstAttribute="centerX" secondItem="hQt-2o-mbm" secondAttribute="centerX" id="eu0-oA-AwC"/>
+                <constraint firstItem="jOB-kQ-e2z" firstAttribute="top" secondItem="LXf-cX-ZHH" secondAttribute="bottom" constant="30" id="fQk-Qf-C7C"/>
+                <constraint firstAttribute="trailing" secondItem="KWm-i3-6mF" secondAttribute="trailing" id="fUr-h1-0dx"/>
+                <constraint firstAttribute="bottom" secondItem="KWm-i3-6mF" secondAttribute="bottom" id="qxM-s9-Q5Q"/>
+                <constraint firstItem="wUY-sz-XZJ" firstAttribute="top" secondItem="hQt-2o-mbm" secondAttribute="top" constant="100" id="yOX-l9-SO5"/>
+            </constraints>
+            <connections>
+                <outlet property="infoLabel" destination="jOB-kQ-e2z" id="Blc-6U-8Ta"/>
+            </connections>
+            <point key="canvasLocation" x="209.5" y="186.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mallHome_checkin_bg" width="281" height="192"/>
+        <image name="mallHome_checkin_success" width="211" height="46"/>
+    </resources>
+</document>

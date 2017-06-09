@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatEndView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_plaint" translatesAutoresizingMaskIntoConstraints="NO" id="LoU-Ob-6FZ">
+                    <rect key="frame" x="9" y="18" width="14" height="14"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_line" translatesAutoresizingMaskIntoConstraints="NO" id="hf6-YF-0pV">
+                    <rect key="frame" x="0.0" y="39" width="259" height="6"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="当前服务已经结束，请您进行" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0k-JO-Txm">
+                    <rect key="frame" x="28" y="18" width="169" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLp-Zo-FKc">
+                    <rect key="frame" x="200" y="16" width="40" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="SbS-zL-IMb"/>
+                        <constraint firstAttribute="width" constant="40" id="gXS-8i-4q9"/>
+                    </constraints>
+                    <state key="normal" title="评价"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.0" green="0.6588235294" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="commentButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cJo-RI-wfi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LoU-Ob-6FZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AQB-Jp-h9b"/>
+                <constraint firstItem="LLp-Zo-FKc" firstAttribute="centerY" secondItem="y0k-JO-Txm" secondAttribute="centerY" id="Br0-HC-1wA"/>
+                <constraint firstItem="y0k-JO-Txm" firstAttribute="top" secondItem="LoU-Ob-6FZ" secondAttribute="top" id="DoR-yA-GrV"/>
+                <constraint firstItem="hf6-YF-0pV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N6t-RF-d5k"/>
+                <constraint firstAttribute="trailing" secondItem="hf6-YF-0pV" secondAttribute="trailing" id="WWT-m4-cmv"/>
+                <constraint firstItem="y0k-JO-Txm" firstAttribute="leading" secondItem="LoU-Ob-6FZ" secondAttribute="trailing" constant="5" id="asX-Zh-Hm2"/>
+                <constraint firstItem="LoU-Ob-6FZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="i5v-g3-G9U"/>
+                <constraint firstItem="LLp-Zo-FKc" firstAttribute="leading" secondItem="y0k-JO-Txm" secondAttribute="trailing" constant="3" id="iTt-7C-4mi"/>
+                <constraint firstItem="hf6-YF-0pV" firstAttribute="top" secondItem="y0k-JO-Txm" secondAttribute="bottom" constant="5" id="ksw-GH-DQK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentButton" destination="LLp-Zo-FKc" id="ldb-dt-fD2"/>
+            </connections>
+            <point key="canvasLocation" x="267.5" y="310"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_line" width="340" height="6"/>
+        <image name="chat_plaint" width="14" height="14"/>
+    </resources>
+</document>

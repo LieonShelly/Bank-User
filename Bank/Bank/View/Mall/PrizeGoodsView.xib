@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A319" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" restorationIdentifier="PrizeGoodsView" id="Wqo-JU-TE0" customClass="PrizeGoodsView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="129.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J20-aU-tre">
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="6Ei-W1-yFS"/>
+                        <constraint firstAttribute="width" secondItem="J20-aU-tre" secondAttribute="height" multiplier="1:1" id="7Ef-dE-OwJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqj-qM-i8j">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBg-Es-iGi">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J20-aU-tre" firstAttribute="leading" secondItem="Wqo-JU-TE0" secondAttribute="leading" priority="750" constant="5" id="5Sp-aP-eTJ"/>
+                <constraint firstItem="pqj-qM-i8j" firstAttribute="leading" secondItem="Wqo-JU-TE0" secondAttribute="leading" constant="5" id="AZE-ey-edN"/>
+                <constraint firstAttribute="trailing" secondItem="pqj-qM-i8j" secondAttribute="trailing" constant="5" id="DqG-Xb-ylP"/>
+                <constraint firstItem="pqj-qM-i8j" firstAttribute="top" secondItem="J20-aU-tre" secondAttribute="bottom" constant="8" id="Fsd-p1-BcZ"/>
+                <constraint firstItem="SBg-Es-iGi" firstAttribute="top" secondItem="pqj-qM-i8j" secondAttribute="bottom" id="INK-ea-xcJ"/>
+                <constraint firstAttribute="trailing" secondItem="J20-aU-tre" secondAttribute="trailing" priority="750" constant="5" id="g9r-J5-b1a"/>
+                <constraint firstItem="SBg-Es-iGi" firstAttribute="leading" secondItem="Wqo-JU-TE0" secondAttribute="leading" constant="5" id="hvJ-SG-v0Y"/>
+                <constraint firstAttribute="trailing" secondItem="SBg-Es-iGi" secondAttribute="trailing" constant="5" id="p3B-VV-O8g"/>
+                <constraint firstItem="J20-aU-tre" firstAttribute="top" secondItem="Wqo-JU-TE0" secondAttribute="top" id="q4v-Zc-jch"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coverImageView" destination="J20-aU-tre" id="mmf-dM-iWk"/>
+                <outlet property="priceLabel" destination="SBg-Es-iGi" id="rTm-4V-ChV"/>
+                <outlet property="titleLabel" destination="pqj-qM-i8j" id="yv6-TD-3Jh"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="418.75"/>
+        </view>
+    </objects>
+</document>

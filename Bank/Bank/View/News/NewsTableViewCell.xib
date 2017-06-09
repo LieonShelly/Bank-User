@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsMenuCellID" rowHeight="110" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" text="绵阳市商业银行股份有限公司关于临时股东大会表决" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NX-tJ-2cp">
+                        <rect key="frame" x="109" y="8" width="203" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015-11-11 11:11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpP-Su-wBQ">
+                        <rect key="frame" x="109" y="80" width="91" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="fw7-RC-prP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="31u-hR-138">
+                        <rect key="frame" x="8" y="8" width="94" height="94"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="94" id="LCD-Xq-Kjb"/>
+                            <constraint firstAttribute="height" constant="94" id="TVK-zG-kXv"/>
+                            <constraint firstAttribute="width" secondItem="31u-hR-138" secondAttribute="height" multiplier="1:1" id="j8j-vx-UeX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="j8j-vx-UeX"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="我行2015年第一次临时股东大会以书面表决的方式审议批准，现予以公告，符合提名条件的股东可于即日起按照办法规定向我行提起四届董事、监事候选人。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtD-2C-pvV">
+                        <rect key="frame" x="109" y="27" width="203" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="31u-hR-138" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5A0-ba-TLR"/>
+                    <constraint firstAttribute="trailing" secondItem="7NX-tJ-2cp" secondAttribute="trailing" constant="8" id="JWw-W6-8iz"/>
+                    <constraint firstAttribute="trailing" secondItem="PtD-2C-pvV" secondAttribute="trailing" constant="8" id="Qas-E9-axp"/>
+                    <constraint firstItem="gpP-Su-wBQ" firstAttribute="leading" secondItem="31u-hR-138" secondAttribute="trailing" constant="7" id="SYx-ze-xdd"/>
+                    <constraint firstItem="PtD-2C-pvV" firstAttribute="leading" secondItem="31u-hR-138" secondAttribute="trailing" constant="7" id="YJQ-Mm-tEo"/>
+                    <constraint firstAttribute="bottom" secondItem="gpP-Su-wBQ" secondAttribute="bottom" constant="7" id="YPW-EN-sSW"/>
+                    <constraint firstItem="7NX-tJ-2cp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="az2-Nd-WGs"/>
+                    <constraint firstItem="gpP-Su-wBQ" firstAttribute="top" secondItem="PtD-2C-pvV" secondAttribute="bottom" constant="1" id="eyG-wL-Zq5"/>
+                    <constraint firstItem="31u-hR-138" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gZo-aq-sAF"/>
+                    <constraint firstItem="PtD-2C-pvV" firstAttribute="top" secondItem="7NX-tJ-2cp" secondAttribute="bottom" id="me8-LT-ycS"/>
+                    <constraint firstItem="7NX-tJ-2cp" firstAttribute="leading" secondItem="31u-hR-138" secondAttribute="trailing" constant="7" id="ow5-KA-aOs"/>
+                    <constraint firstAttribute="bottom" secondItem="31u-hR-138" secondAttribute="bottom" constant="7" id="yez-yZ-5j7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="PtD-2C-pvV" id="2OJ-ln-NuE"/>
+                <outlet property="dateLbel" destination="gpP-Su-wBQ" id="MhT-4J-KmI"/>
+                <outlet property="newsImageView" destination="31u-hR-138" id="xrH-GS-wJZ"/>
+                <outlet property="titleLabel" destination="7NX-tJ-2cp" id="3f4-0I-3QK"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="394"/>
+        </tableViewCell>
+    </objects>
+</document>

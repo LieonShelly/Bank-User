@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HomeSectionFooterView" id="iN0-l3-epB" customClass="HomeSectionFooterView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fpj-M5-kyh">
+                    <rect key="frame" x="10" y="12" width="314" height="81"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fpj-M5-kyh" secondAttribute="trailing" constant="10" id="2XV-3x-19l"/>
+                <constraint firstItem="fpj-M5-kyh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="3li-Xc-oyh"/>
+                <constraint firstItem="fpj-M5-kyh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="DCx-cr-jV1"/>
+                <constraint firstAttribute="bottom" secondItem="fpj-M5-kyh" secondAttribute="bottom" constant="12" id="vIa-XT-FrK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="fpj-M5-kyh" id="nLA-g4-DMx"/>
+            </connections>
+            <point key="canvasLocation" x="38" y="18"/>
+        </view>
+    </objects>
+</document>

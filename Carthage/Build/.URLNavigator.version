@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.2.1",
+  "iOS" : [
+    {
+      "hash" : "5bcb5a0cbb301ea4064f9f34fcb5bb1574d62ad1cc6421b872ef8da235d86caf",
+      "name" : "URLNavigator"
+    }
+  ]
+}

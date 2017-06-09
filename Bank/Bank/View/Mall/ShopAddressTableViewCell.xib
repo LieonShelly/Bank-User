@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopAddressTableViewCellID" rowHeight="67" id="KGk-i7-Jjw" customClass="ShopAddressTableViewCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glg-Xl-o40">
+                        <rect key="frame" x="17" y="14" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXa-fQ-pyY">
+                        <rect key="frame" x="17" y="36" width="243" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4QM-Hr-gav">
+                        <rect key="frame" x="260" y="4" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="C8C-pe-vEu"/>
+                            <constraint firstAttribute="height" constant="60" id="Vae-US-uEC"/>
+                        </constraints>
+                        <state key="normal" image="mall_brandZone_btn_shop_call"/>
+                        <connections>
+                            <action selector="callAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kmL-P3-wOD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4QM-Hr-gav" firstAttribute="leading" secondItem="rXa-fQ-pyY" secondAttribute="trailing" id="2m9-jv-oar"/>
+                    <constraint firstItem="glg-Xl-o40" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="5HP-2x-h8y"/>
+                    <constraint firstAttribute="bottom" secondItem="rXa-fQ-pyY" secondAttribute="bottom" constant="14.5" id="FdC-1I-704"/>
+                    <constraint firstItem="rXa-fQ-pyY" firstAttribute="top" secondItem="glg-Xl-o40" secondAttribute="bottom" constant="4" id="dlM-Dm-oiT"/>
+                    <constraint firstAttribute="trailing" secondItem="4QM-Hr-gav" secondAttribute="trailing" id="edG-qG-ZMO"/>
+                    <constraint firstItem="4QM-Hr-gav" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fvw-7a-VPV"/>
+                    <constraint firstItem="rXa-fQ-pyY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="n4C-Na-O66"/>
+                    <constraint firstItem="glg-Xl-o40" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="shI-p9-2jK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="rXa-fQ-pyY" id="OXJ-zP-CmU"/>
+                <outlet property="phoneButton" destination="4QM-Hr-gav" id="XvB-1N-65T"/>
+                <outlet property="titleLabel" destination="glg-Xl-o40" id="YNm-j7-ylA"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mall_brandZone_btn_shop_call" width="20" height="20"/>
+    </resources>
+</document>

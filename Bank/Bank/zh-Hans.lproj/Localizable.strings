@@ -1,0 +1,470 @@
+/* 
+  Localizable.strings
+  Bank
+
+  Created by Koh Ryu on 16/2/17.
+  Copyright © 2016年 ChangHongCloudTechService. All rights reserved.
+*/
+
+/**
+ *  投资理财
+ */
+"invest_detail_caption" = "产品规模：2000万元\n\n到期时间：2016-02-24\n\n说明：投资于本理财计划的收益的应纳税款由投资人自行缴纳。但若根据法令的规定或税务等国家机关的命令或要求，银行有义务代扣代缴客户承担的税费时，银行将进行代扣代缴。 \n\n风险提示：本理财计划是高风险投资产品，您的本金可能会因市场变动而蒙受重大损失，您应充分认识投资风险，谨慎投资。";
+"product_profit_estimated_func" = "理财产品期末收益=投资本金x理财产品预期年化净收益率/365x实际理财天数";
+"product_detail_instruction" = "投资与本理财计划的收益的应纳税款，由投资人自行缴纳，但若银行根据法令的规定或税务等国家机关的命令或要求，银行有义务代缴客户承担的税费时，银行将进行代扣代缴。";
+
+"view_title_charge" = "充值";
+"view_title_withdraw" = "提现";
+"charge_choose.bank" = "充值方式";
+"withdraw_choose.bank" = "选择银行卡";
+"charge_amount_desc" = "充值金额";
+"withdraw_amount_desc" = "提现金额";
+"charge_amount_placeholder" = "建议转入100元以上金额";
+"withdraw_amount_placeholder" = "";
+"charge_button_confirm" = "确认充值";
+"withdraw_button_confirm" = "确认提现";
+"charge_bottom_tips" = "●可以使用任何银行借记卡转入金额。每次可转入的最多金额依照各银行网上交易签约标准而定，请注意限额。";
+"withdraw_bottom_tips" = "●提现仅支持提到您的绵阳市商业银行卡里，支持5万元额度最快2小时到账。";
+"charge_amount_placeholder" = "建议转入100元以上金额";
+"withdraw_amount_placeholder" = "";
+
+
+"product_instock_title" = "%d天%d时%d分";
+"product_soldout_title" = "已售罄";
+"product_coming_title" = "即将发售";
+
+"product_instock_sub_title" = "停售";
+"product_coming_sub_title" = "%d天%d时%d分起售";
+
+/**
+ *  首页
+ */
+"life_service_tip_gas" = "● 目前只支持缴纳绵阳市燃气公司的燃气费";
+"life_service_tip_water" = "● 目前只支持缴纳绵阳市自来水公司的水费";
+"life_service_tip_tuition" = "● 目前只支持缴纳绵阳市中医大学的学费";
+"shortcut_add_new" = "添加";
+"shortcut_convenient_pay" = "便民支付";
+"shortcut_point_mall" = "积分宝";
+"shortcut_eaccount" = "理财e账户";
+"shortcut_withdraw_large" = "大额取款";
+"shortcut_bank_account" = "银行卡";
+"shortcut_transfer_account" = "汇款转账";
+"shortcut_contact_butler" = "联系管家";
+"section_invest" = "投资理财";
+"section_goods" = "热门商品";
+"section_promotion" = "精选促销";
+"section_city_activity" = "同城活动";
+"section_watch_advertisement" = "看广告";
+"section_brand_zone" = "品牌专区";
+
+"input_empty_account" = "帐号不能为空";
+"input_empty_password" = "密码不能为空";
+"input_empty" = "请正确填写所有必填项";
+"input_notmatch" = "两次输入密码的不匹配";
+"input_image_notfound" = "未获得有效图片";
+"input_captcha_tip" = "我们需要验证一下你的人类身份";
+"input_captcha_error" = "验证码输入错误，请重新输入";
+"input_not_accept_tos" = "请勾选同意银行协议";
+"input_point_limit" = "积分超限，请重新输入";
+"input_point_invalid_input" = "请输入正确的格式，不能包括小数点";
+/**
+ *  积分宝
+ */
+"point_home_button_exchange" = "兑换积分";
+"point_home_button_login" = "立即登录";
+"point_collect_join_number" = "已有%d人参加";
+"point_collect_joined" = "已参加";
+/**
+ * 银行
+ */
+"bank_bind_card_title" = "绑定本行银行卡";
+"bank_bind_other_card_title" = "绑定他行银行卡";
+"bank_payment_name" = "%@(%@)";
+"bank_payment_confirm_pay" = "确认支付%@元";
+"bank_chat_With_Butler_chat_end" = "当前服务已经结束，请对此次服务进行";
+"bank_bind_card_idcardLengthError" = "请输入正确的身份证号";
+"bank_bind_card_InPutRightBankCard" = "请输入正确的绵商银行卡号";
+"bank_bind_card_InPutRightPhoneNumber" = "银行卡预留手机不符，请核对后再试，若银行卡预留手机号已变更，请更新手机号";
+"bank_bind_card_InPutReservedPhoneNumber" = "请输入银行预留手机号";
+/**
+ *  个人中心
+ */
+"center_reservation_title" = "银行预约";
+"center_myorder_logistics_title" = "物流信息";
+"center_myorder_refundDetail_title" = "退款详情";
+"center_myorder_appraise_title1" = "发表评价";
+"center_myorder_appraise_title2" = "查看评价";
+"center_address_nameEmpty" = "收货人姓名不能为空";
+"center_address_phoneEmpty" = "收货人电话不能为空";
+"center_address_addressEmpty" = "收货人地址不能为空";
+"center_setting_paypassLengthError" = "支付密码应为6位数字";
+"center_setting_paypassNotFit" = "两次密码不一致";
+"center_discount_list_title" = "优惠买单列表";
+"center_discount_detail_title" = "优惠买单商户名";
+"center_myshop_title" = "我的店铺";
+"center_myaward_title" = "我的打赏";
+"center_myaward_reward_title" = "打赏";
+"center_myaward_ranklist_title" = "打赏排行榜";
+"center_myward_userAward" = "%@打赏";
+"center_myward_messagelabel_string" = "您可以打赏该店的任意一名服务员,只要将二维码给服务员扫一扫即可！";
+/**
+ *  商城
+ */
+"mall_ordernumber" = "订单编号:%@";
+"mall_price1" = "%.2f元";
+"mall_price2" = "¥%.2f";
+
+"integral_exchangepoint_warningText1" = "请输入100的倍数,1000积分起兑";
+"integral_exchangepoint_warningText2" = "积分超额,请重新输入";
+"integral_exchangepoint_success" = "恭喜！%@积分兑换成功，请在积分宝里查看！";
+
+"mall_discount_confirm_title" = "确认买单%.2f元";
+/**
+ * AlertTitle
+ */
+"alertTitle_permission_photos" = "请允许读取您的照片";
+"alertTitle_permission_camera" = "请在iPhone的“设置－隐私－相机”选项中，允许本应用访问你的相机。";
+"alertTitle_setting" = "更改设置";
+"alertTitle_cancel" = "取消";
+"alertTitle_tip" = "提示";
+"alertTitle_okay" = "好的";
+"alertTitle_confirm" = "确定";
+"alertTitle_ok" = "OK";
+"alertTitle_error" = "Error";
+"alertTitle_set" = "去设置";
+"alertTitle_is_call_butler" = "是否呼叫管家";
+"alertTitle_call" = "呼叫";
+"alertTitle_remove_binding" = "解除绑定";
+"alertTitle_cant_rerlect" = "您当前不可进行积分提现，请先还款！";
+"alertTitle_cant_integral_deposit" = "您当前是2G/3G/4G网络，会产生流量费用，是否继续？";
+"alertTitle_dont_look" = "不看了";
+"alertTitle_look_agin" = "再看一遍";
+"alertTitle_wrong" = "回答不对喔!";
+"alertTitle_nil" = "";
+"alertTitle_is_cancel_sign" = "确定取消报名? ";
+"alertTitle_share_success" = "分享成功";
+"alertTitle_receive_job_success" = "领取任务成功";
+"alertTitle_receive_success" = "领取成功";
+"alertTitle_cancel_success" = "取消成功";
+"alertTitle_sign" = "人报名";
+"alertTitle_clean_cache" = "清理缓存";
+"alertTitle_clean_success" = "清理成功";
+"alertTitle_sign_success" = "报名成功";
+"alertTitle_cancel_sign" = "取消报名";
+"alertTitle_now_sign" = "立即报名";
+"alertTitle_cancelSuccess" = "取消成功";
+"alertTitle_sign" = "人报名";
+"alertTitle_invite_success" = "邀请成功";
+"alertTitle_evaluation_sucess" = "评价成功";
+"alertTitle_contribution_score_success" = "积分贡献成功";
+"alertTitle_revise_success" = "修改成功";
+"alertTitle_pay_password_set_success" = "支付密码设置成功！";
+"alertTitle_open_success" = "开启成功";
+"alertTitle_integral_pay_success" = "积分还款成功";
+"alertTitle_delete_sucess" = "删除成功";
+"alertTitle_confirm_receive" = "请收到货后，再确认收货，否则您可能财物两空！";
+"alertTitle_confirm_receive_success" = "确认收货成功";
+"alertTitle_revise_password_success" = "修改密码成功";
+"alertTitle_order_cancel_success" = "订单取消成功";
+"alertTitle_receive_success" = "收货成功";
+"alertTitle_confirm_receive_success" = "确认收货成功";
+"alertTitle_receive_sucess_check_in_collection" = "已成功收藏！可以在个人中心-我的收藏里查看";
+"alertTitle_load_password_set_success" = "登录密码设置成功";
+"alertTitle_apply_success" = "申请成功";
+"alertTitle_register_today_success" = "今天已经签到了";
+"alertTitle_myshop_unwrap" = "你正在解除与店铺的雇佣关系，解除后相关权限将不能使用，确定解除？";
+"alertTitle_is_cancel_order" = "确定取消订单? ";
+"alertTitle_apply_user_waiting_contact" = "您的申请已记录，请等待银行工作人员联系您。或者您也可以前往绵阳市商业银行网点了解";
+"alertTitle_is_delete_address" = "确认删除地址? ";
+"alertTitle_please_input_password" = "请输入登录密码";
+"alertTitle_choose_delete_goods" = "请选择要删除的宝贝";
+"alertTitle_is_delete_goods" = "确定删除宝贝? ";
+"alertTitle_logout" = "界面5分钟没有操作，退出登录";
+"alertTitle_is_call_Service" = "是否呼叫网点服务电话";
+"alertTitle_navigation" = "导航到网点";
+"alertTitle_baidu_map" = "百度地图";
+"alertTitle_gaode_map" = "高德地图";
+"alertTitle_apple_map" = "苹果地图";
+"alertTitle_order_evaluated" = "订单已经评价过了";
+"alertTitle_evaluate_at_least_one_star" = "还有商品未评价";
+"alertTitle_choose_bank" = "请选择银行卡";
+"alertTitle_found_new_version" = "发现新版本";
+"alertTitle_update_now" = "马上去更新";
+"alertTitle_update_later" = "稍后更新";
+"alertTtile_no_pay" = "账单为0, 不需要付款";
+"alertTitle_max_add_image" = "最多添加四张图片";
+"alertTitle_is_close_finger" = "是否关闭指纹解锁";
+"alertTitle_finger_no_match" = "指纹不匹配";
+"alertTitle_close" = "关闭";
+"alertTitle_equipment_no_user_touchID" = "当前设备Touch ID不可用";
+"alertTitle_call_service_phone" = "拨打客户服务热线?";
+"alertTitle_dials" = "拨打";
+"alertTitle_open_finger_load" = "开启指纹登录";
+"alertTitle_open_touchID" = "开启后可以使用TouchID验证指纹快速完成登录";
+"alertTitle_quickmenu_cannotfix" = "系统默认快捷菜单不可修改！";
+"alertTitle_userName_format_error" = "用户名应为英文字母或汉字开头的4-16位字符中英文、数字组成";
+"alertTitle_paypass_lock" = "错误次数已达上限，请于3小时候再试";
+"alertTitle_advert_pointout" = "当日积分已发放完毕，明天请早些来答题哦";
+"alertTitle_name_error" = "请输入正确的姓名";
+"alertTitle_postCode_error" = "请输入正确的邮政编码";
+"alertTitle_password_count_error" = "支付密码应为6位数字";
+"alertTitle_is_clean_cache" = "是否清理缓存";
+"alertTitle_not_bind_card" = "您还未绑定银行卡";
+"alertTitle_bind_credit_sucess" = "成功绑定信用账户，您已升级为信用会员";
+"alertTitle_please_write_name" = "请输入姓名";
+"alertTitle_name_invalid_format" = "姓名不能包含特殊字符";
+"alertTitle_please_write_idcard" = "请输入身份证号码";
+"alertTitle_please_write_correct_idcard"= "请输入正确的身份证号码";
+"alertTitle_please_write_code" = "请输入短信验证码";
+"alertTitle_please_write_mobile" = "请输入预留手机号";
+"alertTitle_please_select_answer" = "请选择答案";
+"alertTitle_please_choose_reason" = "请选择退款原因";
+"alertTitle_card_logout" = "信用账户与已绑定银行卡身份信息需一致，如不一致请前往“我的银行卡”注销";
+"alertTitle_order_price_update" = "由于商家修改价格，当前订单金额和付款金额不一致无法付款，请联系商家核对后再付款";
+"alertTitle_not_set_paypass" = "尚未设置支付密码，点击确定前去设置。";
+"alertTitle_password_input_error" = "密码应为6-16位英文字母、数字、字符";
+"alertTitle_force_logout" = "为了您的账号安全，请重新登录";
+"alertTitle_refuse_success" = "成功拒绝该邀请";
+"alertTitle_accept_success" = "成功接受邀请";
+/**
+ * MBProgressHUD Title
+ */
+"mbprogressHud_please_score" = "请您先评分";
+"mbprogressHud_have_commented_service" = "评价至少为1星";
+
+
+/**
+ * BarButtonItem Title
+ */
+"barButtonItem_title_map" = "地图";
+"barButtonItem_title_list" = "列表";
+"barButtonItem_title_help" = "帮助";
+"barButtonItem_title_back" = "返回";
+"barButtonItem_title_callup" = "拨打电话";
+"barButtonItem_title_search" = "搜索";
+"barButtonItem_title_share" = "分享";
+"barButtonItem_title_close" = "关闭";
+"barButtonItem_title_more" = "更多";
+"barButtonItem_title_unbind" = "解除绑定";
+"barButtonItem_title_logout" = "注销";
+
+/**
+ * placeHoder Title
+ */
+"placeHoder_title_enter_question" = "请输入你的问题";
+"placeHoder_title_enter_search_keywords" = "请输入搜索关键字";
+"placeHoder_title_refund_explain" = "请补充退款说明";
+"placeHoder_title_choose_end_time" = "请选择终止日";
+"placeHoder_title_choose_begin_time" = "请选择开始日";
+/**
+ * Button Title
+ */
+"button_title_confirm" = "确定";
+"button_title_join_shop_car" = "加入购物车";
+"button_title_buy_now" = "立刻购买";
+"button_title_back" = "返回";
+"button_title_null_back" = " 返回";
+"button_title_get_code" = "获取验证码";
+"button_title_collect" = "收藏";
+"button_title_collected" = "已收藏";
+"button_title_evaluate" = "评价";
+"button_title_finish" = "完成";
+"butotn_title_look_details" = "查看详情";
+"butotn_title_overdue" = "已过期";
+"butotn_title_ogratuity" = "我要打赏";
+"button_title_cancel_order" = "取消订单";
+"button_title_logistics" = "查看物流";
+"button_title_drawback" = "申请退款";
+"button_title_see_evaluation" = "查看评价";
+"button_title_evaluation" = "评价";
+"button_title_confirm_received" = "确认收货";
+"button_title_apply_drawback" = "申请退款";
+"button_title_pay" = "付款";
+"button_title_choose_begin_time" = "请选择开始日";
+"button_title_choose_end_time" = "请选择开始日";
+"button_title_end_later_than_begin" = "开始时间不能晚于结束时间";
+"button_title_end_early_as_begin" = "结束时间不能早于开始时间";
+/**
+ * Controller Title
+ */
+"controller_title_about_us" = "关于我们";
+"controller_title_public_details" = "公告详情";
+"controller_title_transfer_other" = "向他行转账";
+"controller_title_repayment_details" = "还款明细";
+"controller_title_load" = "登录";
+"controller_title_good_details" = "商品详情";
+"controller_title_help_center" = "帮助中心";
+"controller_title_money_repayment" = "现金还款";
+"controller_title_integral_repayment" = "积分还款";
+"controller_title_contact_butler" = "联系管家";
+"controller_title_lottery" = "砸金蛋 抽大奖";
+"controller_title_not_star" = "抽奖未开始";
+"controller_title_transfer_same" = "同行转账";
+"controller_title_bankcard_detail" = "银行卡明细";
+"controller_title_point_detail" = "积分明细";
+"controller_title_update_mobile" = "更改登录手机号";
+"controller_title_associated_credit" = "关联信用账户";
+"controller_title_hot_goods" = "热门商品";
+"controller_title_love_buy" = "爱逛爱买";
+"controller_title_love_food" = "爱吃爱玩";
+/**
+ * Label Title
+ */
+"label_title_joined" = "已参加";
+"label_title_join_now" = "立即参加";
+"label_title_begin_answer" = "开始答题";
+"label_title_end_answer" = "今天次数已用完，明天再来吧~";
+"label_title_add_shop_car_success" = "加入购物车成功";
+"label_title_privilege" = "优惠";
+"label_title_sold_out" = "已售完";
+"label_title_undercarriage" = "下架";
+"label_title_integral" = "积分";
+"label_title_agree" = "已同意";
+"label_title_overdue" = "已过期";
+"label_title_refuse" = "已拒绝";
+"label_title_igone" = "已忽略";
+"label_title_lose_message" = "消息失效";
+"label_title_all" = "全部";
+"label_title_hot_good" = "热门商品";
+"label_title_integral_excess" = "积分超额,请重新输入";
+"label_title_100_integer" = "请输入100的倍数,1000积分起还";
+"label_title_logistics_tracking" = "物流跟踪";
+"label_title_share_agin" = "分享领取免费机会";
+"label_title_use_chance" = "今日机会已用完，明天再接再厉!";
+"label_title_expect" = "敬请期待!";
+"label_title_new_lottery" = "新一期的抽奖尚未开始";
+"label_title_sorry" = "Sorry, 未砸中奖品！";
+"label_title_sales_promotion" = "精选促销";
+"label_title_live_event" = "现场活动";
+"label_title_brand" = "品牌专区";
+"label_title_star_shop_time" = "开店时间: ";
+"label_title_star_shop_grade" = "店铺评分：";
+/**
+ * Eureka Title
+ */
+"eureka_section_title" = "银行卡信息";
+"eureka_section_footer_title" = "（支持绑定所有银联储蓄卡）";
+"eureka_section_confirm_safe" = "安全确认";
+"eureka_section_pay_account_title" = "付款账号";
+"eureka_section_pay_money" = "转账进额";
+"eureka_section_receiver_info_title" = "收款人信息";
+"eureka_section_receiver_info_tag" = "receiver_info";
+
+
+"eureka_textrow_title_name_title" = "姓名";
+"eureka_textrow_title_card_name_title" = "持卡人";
+"eureka_textrow_title_name_tag" = "name";
+"eureka_textrow_title_name_placeholder" = "请输入持卡人姓名";
+"eureka_textrow_title_id_title" = "身份证";
+"eureka_textrow_title_id_tag" = "idcard";
+"eureka_textrow_title_id_placeholder" = "请输入持卡人身份证号";
+"eureka_textrow_title_number_title" = "卡号";
+"eureka_textrow_title_number_tag" = "number";
+"eureka_textrow_title_number_paceholder" = "请输入绵商行银行卡号";
+"eureka_textrow_title_phone_title" = "手机号";
+"eureka_textrow_title_phone_tag" = "mobile";
+"eureka_textrow_title_phone_paceholder" = "请输入银行预留手机号";
+"eureka_textrow_title_verify_code_title" = "验证码";
+"eureka_textrow_title_verify_code_tag" = "verify_code";
+"eureka_textrow_title_verify_code_paceholder" = "请输入短信验证码";
+"eureka_textrow_title_bank_title" = "银行";
+"eureka_textrow_title_bank_tag" = "bank";
+"eureka_textrow_title_bank_paceholder" = "请选择银行";
+"eureka_textrow_title_card_title" = "账号";
+"eureka_textrow_title_card_tag" = "card";
+"eureka_textrow_title_balance_title" = "余额";
+"eureka_textrow_title_balance_tag" = "balance";
+"eureka_textrow_title_money_title" = "金额";
+"eureka_textrow_title_money_tag" = "money";
+"eureka_textrow_title_money_paceholder" = "请输入转账金额";
+"eureka_textrow_title_to_name_title" = "姓名";
+"eureka_textrow_title_to_name_tag" = "to_name";
+"eureka_textrow_title_to_name_paceholder" = "请输入收款人姓名";
+"eureka_textrow_title_to_number_title" = "卡号";
+"eureka_textrow_title_to_number_tag" = "to_number";
+"eureka_textrow_title_to_number_paceholder" = "请输入收款人卡号";
+"eureka_decimalrow_title_factorage" = "手续费";
+"eureka_textrow_title_to_mobile_title" = "手机号码";
+"eureka_textrow_title_to_mobile_tag" = "to_mobile";
+"eureka_textrow_title_to_mobile_paceholder" = "请输入收款人手机号(非必须)";
+"eureka_textrow_title_remark_title" = "备注";
+"eureka_textrow_title_remark_tag" = "remark";
+"eureka_textrow_title_remark_paceholder" = "请填写备注(非必需)";
+/**
+ * error title
+ */
+"error_title_uploa_failure" = "上传失败";
+"error_title_input_mobile" = "请输入手机号";
+/**
+ * titleLabel title
+ */
+"titleLabel_title_revoke_message" = "该消息已被撤销";
+"titleLabel_title_test_home_id" = "通过Home键验证已有的手机指纹";
+"titleLabel_title_multi_select" = "多选";
+"titleLabel_title_one_select" = "单选";
+/**
+ * String title
+ */
+"string_title_food" = "美食";
+"string_title_default" = "默认排序";
+"string_title_highest_sales" = "销量最高";
+"string_title_latest_in" = "最新入驻";
+"string_title_highest_score" = "最高评分";
+"string_title_latest_release" = "最新发布";
+"string_title_most_points" = "积分最多";
+"string_title_most_popular" = "人气最高";
+"string_title_end_sign" = "报名即将截止";
+"string_title_register" = "恭喜你! 签到";
+"string_title_integral" = "积分";
+"string_title_registered" = "已签到";
+"string_title_sign" = "签到";
+"string_title_all_cats" = "全部分类";
+
+/// 扫描二维码
+"scan_qr_title" = "二维码";
+"scan_qr_tips" = "对准二维码到框内即可扫描";
+"scan_qr_unknown" = "不能识别二维码";
+"scan_qr_tips_success" = "恭喜你获得%@积分!";
+
+"store_permission_cash" = "收银员";
+"store_permission_waiter" = "服务员";
+
+
+"hud_disconnect" = "  网络断开连接，请检查手机。 ";
+"hud_request_timeout" = " 请求超时，请稍后再试。 ";
+"hud_request_failed" = " 请求失败，服务器维护中 ";
+"hud_loading" = " 加载中 ";
+
+/// 没有数据页面文案
+"none_coupon_title" = "您还没消费券";
+"none_coupon_button_title" = "马上去逛逛";
+"none_prize_title" = "您还没奖品";
+"none_offlineEvent_title" = "您还没现场活动";
+"none_offloneEvent_button_title" = "马上去参加";
+"none_task_title" = "您还没任务";
+"none_task_button_title" = "马上去领取";
+"none_collection_title" = "您还没收藏商品";
+"none_collection_button_title" = "马上去逛逛";
+"none_order_title" = "您还没订单";
+"none_order_button_title" = "随便逛逛";
+"none_discount_title" = "您还没优惠买单";
+"none_event_title" = "活动无法查看";
+"none_message_title" = "您还没消息";
+"none_search_title" = "搜索无结果";
+"none_goods_title" = "您还没商品";
+"none_card_title" = "您还没银行卡";
+"none_card_button_title" = "添加银行卡";
+"none_reward_title" = "您还没打赏";
+"none_address_title" = "您还没地址";
+"none_address_button_title" = "添加新地址";
+"none_advert_title" = "广告无法查看";
+"none_data_title" = "没有相关数据";
+
+/// 页面标题
+"page_add_manage" = "地址管理";
+
+/// 选择照片页面
+"image_picker_button_cancel" = "取消";
+"image_picker_button_done" = "完成";
+"image_picker_button_no_available_photo" = "没有可以选择的照片";
+

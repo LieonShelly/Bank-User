@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Kur-PF-q11" customClass="NoneBackgroundView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="492"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_goods_out" translatesAutoresizingMaskIntoConstraints="NO" id="OTC-BD-UMk">
+                    <rect key="frame" x="91" y="75" width="123" height="140"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic_goods_words" translatesAutoresizingMaskIntoConstraints="NO" id="kSq-b3-a3X">
+                    <rect key="frame" x="100" y="255" width="106" height="16"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96055269241333008" green="0.96052390336990356" blue="0.96054017543792725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kSq-b3-a3X" firstAttribute="top" secondItem="OTC-BD-UMk" secondAttribute="bottom" constant="40" id="6mN-mZ-s1H"/>
+                <constraint firstItem="kSq-b3-a3X" firstAttribute="centerX" secondItem="Kur-PF-q11" secondAttribute="centerX" id="TsT-vG-dPK"/>
+                <constraint firstItem="OTC-BD-UMk" firstAttribute="centerX" secondItem="Kur-PF-q11" secondAttribute="centerX" id="sFp-18-bpA"/>
+                <constraint firstItem="OTC-BD-UMk" firstAttribute="top" secondItem="Kur-PF-q11" secondAttribute="top" constant="75" id="x4g-jv-TSZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="OTC-BD-UMk" id="O4w-rL-jZb"/>
+                <outlet property="titleImageView" destination="kSq-b3-a3X" id="C3f-0W-UOR"/>
+            </connections>
+            <point key="canvasLocation" x="208.5" y="321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pic_goods_out" width="123" height="140"/>
+        <image name="pic_goods_words" width="106" height="16"/>
+    </resources>
+</document>

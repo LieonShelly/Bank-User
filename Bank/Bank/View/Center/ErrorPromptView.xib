@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ErrorPromptView" id="yJF-df-niU" customClass="ErrorPromptView" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center_passerror_pic" translatesAutoresizingMaskIntoConstraints="NO" id="BZ8-1b-Rqa">
+                    <rect key="frame" x="121" y="50" width="133" height="116"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center_passerror_word" translatesAutoresizingMaskIntoConstraints="NO" id="ETR-83-f2r">
+                    <rect key="frame" x="89" y="201" width="197" height="36"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-x2-HMe">
+                    <rect key="frame" x="37.5" y="272" width="300" height="40"/>
+                    <state key="normal" image="center_passerror_btn"/>
+                    <connections>
+                        <action selector="findPassAction:" destination="yJF-df-niU" eventType="touchUpInside" id="CDO-md-Sui"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hNb-x2-HMe" firstAttribute="centerX" secondItem="yJF-df-niU" secondAttribute="centerX" id="9ZG-Oc-yeb"/>
+                <constraint firstItem="BZ8-1b-Rqa" firstAttribute="centerX" secondItem="yJF-df-niU" secondAttribute="centerX" id="Jqc-78-sq8"/>
+                <constraint firstItem="BZ8-1b-Rqa" firstAttribute="top" secondItem="yJF-df-niU" secondAttribute="top" constant="50" id="RKa-GR-yIY"/>
+                <constraint firstItem="ETR-83-f2r" firstAttribute="top" secondItem="BZ8-1b-Rqa" secondAttribute="bottom" constant="35" id="VDe-Zt-oIj"/>
+                <constraint firstItem="ETR-83-f2r" firstAttribute="centerX" secondItem="yJF-df-niU" secondAttribute="centerX" id="rlg-es-DoQ"/>
+                <constraint firstItem="hNb-x2-HMe" firstAttribute="top" secondItem="ETR-83-f2r" secondAttribute="bottom" constant="35" id="wY3-0q-Low"/>
+            </constraints>
+            <point key="canvasLocation" x="164" y="213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="center_passerror_btn" width="300" height="40"/>
+        <image name="center_passerror_pic" width="133" height="116"/>
+        <image name="center_passerror_word" width="197" height="36"/>
+    </resources>
+</document>

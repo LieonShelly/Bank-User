@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="T23-i8-mpj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="A9F-kE-V9l">
+            <objects>
+                <navigationController id="T23-i8-mpj" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_02_off" selectedImage="tab_02_on" id="MxO-4g-Cly">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lIu-3m-hUn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MlR-sP-Way" kind="relationship" relationship="rootViewController" id="k5d-79-PAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnB-P2-Sfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="326"/>
+        </scene>
+        <!--今日头条-->
+        <scene sceneID="KQb-jr-qmC">
+            <objects>
+                <viewController storyboardIdentifier="NewsHomeVC" hidesBottomBarWhenPushed="YES" id="MlR-sP-Way" customClass="NewsHomeViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bOg-UJ-g1j"/>
+                        <viewControllerLayoutGuide type="bottom" id="PCJ-Jn-UPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VhJ-Az-WVd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOd-Pk-5qD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="bQn-J4-GQV"/>
+                                </constraints>
+                            </scrollView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wst-u7-NBv">
+                                <rect key="frame" x="0.0" y="106" width="375" height="512"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="MlR-sP-Way" id="biX-gp-xP0"/>
+                                    <outlet property="delegate" destination="MlR-sP-Way" id="P2N-n6-glj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZOd-Pk-5qD" secondAttribute="trailing" id="DGj-YM-wEA"/>
+                            <constraint firstItem="Wst-u7-NBv" firstAttribute="leading" secondItem="VhJ-Az-WVd" secondAttribute="leading" id="HKW-VS-30V"/>
+                            <constraint firstItem="PCJ-Jn-UPQ" firstAttribute="top" secondItem="Wst-u7-NBv" secondAttribute="bottom" id="HrA-BU-MvS"/>
+                            <constraint firstItem="ZOd-Pk-5qD" firstAttribute="top" secondItem="bOg-UJ-g1j" secondAttribute="bottom" id="hGa-0W-RZ9"/>
+                            <constraint firstItem="Wst-u7-NBv" firstAttribute="top" secondItem="ZOd-Pk-5qD" secondAttribute="bottom" id="iFS-s5-cOo"/>
+                            <constraint firstAttribute="trailing" secondItem="Wst-u7-NBv" secondAttribute="trailing" id="jha-aA-GOi"/>
+                            <constraint firstItem="ZOd-Pk-5qD" firstAttribute="leading" secondItem="VhJ-Az-WVd" secondAttribute="leading" id="xee-TI-u3q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="今日头条" id="PSS-sb-5qk"/>
+                    <connections>
+                        <outlet property="scrollerView" destination="ZOd-Pk-5qD" id="N33-cA-6WV"/>
+                        <outlet property="tableView" destination="Wst-u7-NBv" id="06a-9K-hpg"/>
+                        <segue destination="rmG-bN-i2e" kind="push" identifier="newsMenuSegueID" id="wyn-5E-ad1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dev-gC-cYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="342"/>
+        </scene>
+        <!--头条详情-->
+        <scene sceneID="3HN-Xj-QzW">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailsViewController" hidesBottomBarWhenPushed="YES" id="rmG-bN-i2e" customClass="NewsDetailsViewController" customModule="Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RKP-GV-YVY"/>
+                        <viewControllerLayoutGuide type="bottom" id="sZa-AA-T3v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ztc-oF-q3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="头条详情" id="Rf5-JG-upd">
+                        <barButtonItem key="rightBarButtonItem" image="btn_share" id="cnO-ft-wGe">
+                            <connections>
+                                <action selector="shareAction:" destination="rmG-bN-i2e" id="11p-dB-cDn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEb-JT-OUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173" y="1235"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_share" width="19" height="20"/>
+        <image name="tab_02_off" width="23" height="23"/>
+        <image name="tab_02_on" width="23" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

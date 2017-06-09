@@ -1,0 +1,5 @@
+app_identifier "cn.msh.mobile.mall.customer.dev" # The bundle identifier of your app
+apple_id "itunes@chcts.cn" # Your Apple email address
+
+team_id "W9B5AM43M3"  # Developer Portal Team ID
+

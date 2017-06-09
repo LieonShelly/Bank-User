@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="accountCellID" rowHeight="75" id="KGk-i7-Jjw" customClass="AccountTableViewCell" customModule="Bank" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sxR-Wh-0gZ">
+                        <rect key="frame" x="12" y="15" width="184" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="绵阳科技馆中环电影城消费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulc-By-X0Y">
+                                <rect key="frame" x="0.0" y="0.0" width="184" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.084119804203510284" green="0.084135964512825012" blue="0.084117121994495392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.11  11:11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2J-3U-55h">
+                                <rect key="frame" x="0.0" y="30" width="184" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.32580429315567017" green="0.32586684823036194" blue="0.32579389214515686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5o-oc-wEs">
+                        <rect key="frame" x="266" y="27" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sxR-Wh-0gZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="14f-lo-Aoa"/>
+                    <constraint firstAttribute="bottom" secondItem="sxR-Wh-0gZ" secondAttribute="bottom" constant="13.5" id="3Kv-Sp-tGb"/>
+                    <constraint firstItem="sxR-Wh-0gZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9yS-gU-bSJ"/>
+                    <constraint firstItem="v5o-oc-wEs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XfF-P0-9b9"/>
+                    <constraint firstItem="sxR-Wh-0gZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="cTB-jX-Aec"/>
+                    <constraint firstAttribute="trailing" secondItem="v5o-oc-wEs" secondAttribute="trailing" constant="12" id="vRb-NX-WJT"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="14f-lo-Aoa"/>
+                        <exclude reference="3Kv-Sp-tGb"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="K2J-3U-55h" id="1Xg-C9-SfQ"/>
+                <outlet property="titleLabel" destination="ulc-By-X0Y" id="erL-L7-s6m"/>
+                <outlet property="valueLabel" destination="v5o-oc-wEs" id="X9O-7E-sw4"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="278"/>
+        </tableViewCell>
+    </objects>
+</document>
